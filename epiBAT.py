@@ -14,7 +14,6 @@ from itertools import combinations #to generate combinations
 
 #######################################################################
 #PLEASE SET THE INPUT PARAMETERS HERE
-population_size = 100
 gini_population = 50
 k2_population = 50
 iteration_size = 30
@@ -201,6 +200,7 @@ highest_coord = 0 #set later
 total_combinations = 0 #set later
 number_of_SNPs = 0 #set later
 best_solutions = []
+population_size = gini_population + k2_population
 
 class Bats:
     def __init__(self, number_of_SNPs,population_size,freq_min,freq_max):
